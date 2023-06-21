@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <Link rel="stylesheet" type="text/css" href="footer.css">
+        <link rel="stylesheet" type="text/css" href="stile.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcd.bootstrapcdn.con/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <title>CUESTIONARIO</title>
+</head>
+<body>
+    <div style="margin:24px;">
+        <nav class="navbar navbar-light" style="background-color: black;">
+        <div class="container">
+        <a class="navbar-brand" href="index3.html">Inicio</a>
+        <ul class="nav navbar-nav">
+        <li>
+        <a href="menu.html">Menu</a>
+        </li>
+        <li>
+         <a href="calculadorafi.html">Calculadora Fisica</a>
+         </li>
+         <li>
+            <a href="perfil.html">Perfil</a>
+           </li>
+        <li>
+        <a href="API.html">Pelis d luis</a>
+        </li>
+        <li>
+        <a href="calculadora.html">calculadora</a>
+        </li>
+        <li class="active">
+            <a href="cuestionario.html">cuestionario</a>
+        </li>
+        </ul>
+        </div>
+        </nav>
+        </div>
+        <style>
+            body{
+                justify-content: center;
+                align-items: center;
+                overflow: hidden;
+                margin: 0;
+            }
+            .quiz-container{
+                outline: red dashed 9px;
+                background-color: #ffffff;
+                border-radius: 10px;
+                box-shadow: 0 0 10px #0004ff;
+                width: 500px;
+                overflow: hidden;
+            }
+            .quiz-header{
+                padding: 4rem;
+            }
+            h2{
+                padding: 1rem;
+                text-align: center;
+                margin: 0;
+            }
+            ul{
+                list-style-type: none;
+                padding: 0;
+            }
+            ul li{
+                font-size: 16px;
+                margin: 10px 0;
+            }
+            ul li label{
+                cursor: pointer;
+            }
+            button{
+                background-color: rgb(196, 156, 107);
+                color: #000000;
+                border: none;
+                display: block;
+                width: 100%;
+                cursor: pointer;
+                font-size: 15px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                padding: 15px;
+            }
+            button:hover{
+                background-color: rgb(241, 215, 179);
+            }
+            button:focus{
+                outline: none;
+                background-color: rgb(88, 50, 0);
+            }
+        </style>
+        <div class="container">
+            <div class="quiz-container">
+                <div class="quiz-header">
+                    <div class="image-container">
+                        <img src="imagen.jpg" alt="imagen" id="question-image" style="width: 250px; height: auto;"> 
+                    </div>
+                    <h2 id="question">QUESTION TEXT</h2>
+                    <ul>
+                        <li>
+                            <input type="radio" id="answer" id="a" class="answer">
+                            <label for="a" id="a_text">QUESTION</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="answer" id="b" class="answer">
+                            <label for="b" id="b_text">QUESTION</label>
+                        </li><li>
+                            <input type="radio" id="answer" id="c" class="answer">
+                            <label for="c" id="c_text">QUESTION</label>
+                        </li><li>
+                            <input type="radio" id="answer" id="d" class="answer">
+                            <label for="d" id="d_text">QUESTION</label>
+                        </li>
+                    </ul>
+                </div>
+                <button id="submit">SIGUIENTE</button>
+            </div>
+        </div>
+        <script>
+            const quizData = [ 
+            {
+                question: "que team de agua soy?",
+                Image: "https://img2.freepng.es/20190430/xh/kisspng-transparency-question-mark-portable-network-graphi-5cc8305aa34059.0798035215566234506687.jpg",
+                a:"horchata",
+                b:"lion",
+                c:"jamaica",
+                d:"melon",
+                correct:"a",
+            },
+            {
+                question: "que deporte me gusta mas",
+                Image: "https://img2.freepng.es/20190430/xh/kisspng-transparency-question-mark-portable-network-graphi-5cc8305aa34059.0798035215566234506687.jpg",
+                a:"futbol",
+                b:"basketball",
+                c:"beisbol",
+                d:"tenis",
+                correct:"c",
+            },
+            {
+                question: "cual es mi 2 nombre?",
+                Image: "https://img2.freepng.es/20190430/xh/kisspng-transparency-question-mark-portable-network-graphi-5cc8305aa34059.0798035215566234506687.jpg",
+                a:"luis",
+                b:"angel",
+                c:"gabino",
+                d:"eduardp",
+                correct:"c", 
+            },
+            {
+                question: "quien es mi cantante fav?",
+                Image: "https://img2.freepng.es/20190430/xh/kisspng-transparency-question-mark-portable-network-graphi-5cc8305aa34059.0798035215566234506687.jpg",
+                a:"osuna",
+                b:"bad bunny",
+                c:"eladio carrion",
+                d:"ferxhho",
+                correct:"c",
+            },
+
+            ];
+        </script>
+        <footer>
+        <div class="container">
+          <div class="footer-content">
+            <div class="footer-section about">
+              <h2>CONTACTAME</h2>
+              <p>si estas interesado en contactarme puedes hacerlo atravez de cualquiera de las siguientes redes sociales </p>
+              <div class="contact-links">
+                <a href="http://www.facebook.com/miperfil" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="http://www.instagram.com/miperfil" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="http://www.snapchat.com/miperfil" target="_blank"><i class="fab fa-snapchat"></i></a>
+                <a href="http://www.twitter.com/miperfil" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="http://www.youtube.com/miperfil" target="_blank"><i class="fab fa-youtube"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+  </body>
+</html>
